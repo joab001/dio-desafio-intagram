@@ -34,7 +34,6 @@ body {
   flex-direction: column;
   align-items: stretch;
   border: solid 1px var(--bordas);
-  /* width: 25%; */
   padding: 25px;
   background-color: #fff;
 }
@@ -59,6 +58,11 @@ body {
   display: flex;
   align-items: center;
 }
+
+.coluna{
+  flex-direction: column;
+}
+
 .icone-facebook{
     margin-left: 2rem;
 }
@@ -71,6 +75,11 @@ input {
   height: 2rem;
   border-radius: 5px;
   background-color: #fafafa;
+  outline: none;
+}
+
+input:hover{
+  border: solid 0.1px var(--bordas);
 }
 
 p {
@@ -83,29 +92,32 @@ a {
 }
 
 button {
-  height: 2rem;
+  height: 2.5rem;
   border-radius: 5px;
-  margin-top: 10%;
+  margin-top: 8%;
   margin-bottom: 8%;
   color: white;
-  background-color: #3f51b5;
+  background-color: #b2dffc;
 }
 
 button:hover {
   cursor: pointer;
+  background-color:#3f51b5
 }
 
-.container-get-app {
-  display: flex;
-  align-items: center;
-  /* width: 10%; */
-}
-
-.img-get-app {
-  width: 8rem;
-  height: 4rem;
+.coluna a img {
+  max-height: 4rem;
+  max-width: 13rem;
 }
 .recuperar-senha{
     font-size: 1.2rem;
     margin: 0.5rem 0 0 5rem;
+}
+
+.coluna .caixa{
+  justify-content: space-evenly;
+}
+
+.coluna p{
+  margin: 1rem;
 }
