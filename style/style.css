@@ -25,8 +25,14 @@ body {
 .contaniner {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
   padding: 5%;
+}
+.imagem-celular img{
+  max-width: 400px;
+  width: 100%;
+  min-width: 200px;
 }
 
 .container-login {
@@ -120,4 +126,8 @@ button:hover {
 
 .coluna p{
   margin: 1rem;
+}
+
+@media (max-width:750px) {
+  .imagem-celular{display: none;}
 }
