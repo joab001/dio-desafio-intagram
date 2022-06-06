@@ -7,6 +7,11 @@
 
 :root {
   --bordas: #dbdbdb;
+  --fundo: #fafafa;
+  --branco: #fff;
+  --azul: #3f51b5;
+  --botao: #b2dffc;
+  --paragrafo: gray;
 }
 
 html {
@@ -19,7 +24,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
   font-size: 1.5rem;
-  background-color: #fafafa;
+  background-color: var(--fundo);
 }
 
 .contaniner {
@@ -29,7 +34,8 @@ body {
   justify-content: space-evenly;
   padding: 5%;
 }
-.imagem-celular img{
+
+.imagem-celular img {
   max-width: 400px;
   width: 100%;
   min-width: 200px;
@@ -41,10 +47,10 @@ body {
   align-items: stretch;
   border: solid 1px var(--bordas);
   padding: 25px;
-  background-color: #fff;
+  background-color: var(--branco);
 }
-.cadastro{
-    margin-top: 5px;
+.cadastro {
+  margin-top: 5px;
 }
 
 .logo-intagram {
@@ -65,12 +71,12 @@ body {
   align-items: center;
 }
 
-.coluna{
+.coluna {
   flex-direction: column;
 }
 
-.icone-facebook{
-    margin-left: 2rem;
+.icone-facebook {
+  margin-left: 2rem;
 }
 
 input {
@@ -80,21 +86,21 @@ input {
   width: 100%;
   height: 2rem;
   border-radius: 5px;
-  background-color: #fafafa;
+  background-color: var(--fundo);
   outline: none;
 }
 
-input:hover{
+input:hover {
   border: solid 0.1px var(--bordas);
 }
 
 p {
-  color: gray;
+  color: var(--paragrafo);
 }
 
 a {
   text-decoration: none;
-  color: #3f51b5;
+  color: var(--azul);
 }
 
 button {
@@ -102,32 +108,35 @@ button {
   border-radius: 5px;
   margin-top: 8%;
   margin-bottom: 8%;
-  color: white;
-  background-color: #b2dffc;
+  color: var(--branco);
+  background-color: var(--botao);
 }
 
 button:hover {
   cursor: pointer;
-  background-color:#3f51b5
+  background-color: var(--azul);
 }
 
 .coluna a img {
   max-height: 4rem;
   max-width: 13rem;
 }
-.recuperar-senha{
-    font-size: 1.2rem;
-    margin: 0.5rem 0 0 5rem;
+
+.recuperar-senha {
+  font-size: 1.2rem;
+  margin: 0.5rem 0 0 5rem;
 }
 
-.coluna .caixa{
+.coluna .caixa {
   justify-content: space-evenly;
 }
 
-.coluna p{
+.coluna p {
   margin: 1rem;
 }
 
-@media (max-width:750px) {
-  .imagem-celular{display: none;}
+@media (max-width: 750px) {
+  .imagem-celular {
+    display: none;
+  }
 }
